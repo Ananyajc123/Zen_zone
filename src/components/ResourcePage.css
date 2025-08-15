@@ -1,0 +1,101 @@
+/* ResourcePage.css
+
+.resource-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .content-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .links-section {
+    margin-top: 20px;
+  }
+  
+  .links-section h3 {
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .links-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links-section li {
+    margin: 5px 0;
+  }
+  
+  .links-section a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .links-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .home-button {
+    margin-top: 20px;
+  }
+  
+  .home-button a {
+    color: white;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .home-button a:hover {
+    background-color: #0056b3;
+  }
+   */
+
+   /* Overall page background */
+.page-container {
+  background-color: white; /* White background for the entire page */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Styling for the box with the background image */
+.image-box {
+  width: 400px; /* Adjust width */
+  height: 300px; /* Adjust height */
+  background-image: url("/assets/zen-background.jpg"); /* Path to your image */
+  background-size: cover; /* Make the image cover the entire box */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Avoid repeating the image */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+  padding: 20px; /* Padding inside the box */
+  text-align: center; /* Center-align text */
+  color: black; /* Text color inside the box */
+}
+
+h2, h3 {
+  color: white; /* White text for heading */
+}
+
+p {
+  color: white; /* White text for description */
+}

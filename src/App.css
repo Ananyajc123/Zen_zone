@@ -1,0 +1,418 @@
+/* src/App.css
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+/* } 
+
+
+/* src/App.css */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in animation */
+.quiz-detail-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4; /* Light background color */
+  background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px; /* To give space from the top */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+  border-radius: 15px;
+  padding-bottom: 30px;
+}
+
+/* Style for images */
+.quiz-detail-page img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for headings */
+.quiz-detail-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for paragraphs */
+.quiz-detail-page p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Style for buttons */
+.quiz-detail-page .button {
+  background-color: #4CAF50;
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.quiz-detail-page .button:hover {
+  background-color: #45a049;
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.links {
+  margin-bottom: 20px;
+}
+
+.links a {
+  color: #61dafb;
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+/* Parent container */
+.container {
+  display: flex; /* Ensures Sidebar and Main Content align side-by-side */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 300px; /* Fixed width for the sidebar */
+  min-width: 300px;
+  background-color: #f8f9fa; /* Background color for sidebar */
+  border-right: 1px solid #e0e0e0; /* Add a border for separation */
+  height: 100%;
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1; /* Takes up the remaining space beside the sidebar */
+  overflow-y: auto; /* Allow scrolling within the main content */
+  padding: 16px; /* Add padding for spacing */
+  background: #fdfdfe; /* Light background for better contrast */
+}
+
+.sidebar {
+  transition: width 0.3s;
+}
+
+.menu-item .icon {
+  font-size: 1.5rem;
+}
+
+.menu-item .text {
+  font-size: 1rem;
+}
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-banner {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.top-banner a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin-left: 20px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cta-button {
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #FF5A4F;
+}
+
+.why-section, .privacy-section {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.why-section h1, .privacy-section h2 {
+  text-align: center;
+  color: #333;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.feature {
+  width: 45%;
+}
+
+.feature-image img {
+  width: 300px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+/* General Styles */
+.home-page {
+  font-family: 'Arial', sans-serif;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Header Styles */
+.hero-section {
+  background: url('./assets/zen-background.png') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* News Section */
+.news-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.news-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Gallery Section */
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y:auto; /* Make the content area scrollable */
+  padding: 20px;
+}
+
+.content-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content-text {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
